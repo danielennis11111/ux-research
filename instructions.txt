@@ -1,0 +1,146 @@
+# Landing Page User Testing Frontend - Cursor Instructions
+
+## Project Overview
+Create a simple, clean frontend-only landing page for user testing. This will be deployed to GitHub Pages to help understand user preferences for different AI project entry points.
+
+## Technical Requirements
+- Pure HTML, CSS, and vanilla JavaScript (no frameworks needed for simplicity)
+- Mobile-responsive design
+- Fast loading for user testing
+- Clean, modern UI that doesn't distract from testing the core user flows
+
+## Landing Page Structure
+
+### Header Section
+- Clean logo/title area
+- Brief tagline: "Build AI Projects Your Way"
+- Subtle background or gradient
+
+### Main Content - 5 Primary Options
+Create 5 distinct, equally-weighted cards/buttons for:
+
+1. **"Start From Scratch"** 
+   - Icon: Plus/Create symbol
+   - Description: "Use MyAI Builder to create your project from the ground up"
+   - CTA: "Build Now"
+
+2. **"Learn First"**
+   - Icon: Book/Document symbol  
+   - Description: "Follow articles and documentation to understand the basics"
+   - CTA: "Read Guides"
+
+3. **"Watch & Learn"**
+   - Icon: Play/Video symbol
+   - Description: "Watch video tutorials to see projects built step-by-step"
+   - CTA: "Watch Videos"
+
+4. **"Use a Template"**
+   - Icon: Template/Grid symbol
+   - Description: "Start with someone else's prebuilt template and customize it"
+   - CTA: "Browse Templates"
+
+5. **"Chat to Build"**
+   - Icon: Chat/Message symbol
+   - Description: "Chat with AI to help guide you through building your project"
+   - CTA: "Start Chatting"
+
+## Design Requirements
+- Each option should be a card with hover effects
+- Use consistent spacing and typography
+- Include subtle icons (you can use simple CSS shapes or emoji initially)
+- Make it easy to A/B test different layouts (grid vs list vs carousel)
+- Add simple analytics tracking (data attributes) to measure clicks
+
+## File Structure
+index.html styles.css
+script.js README.md
+
+
+## User Testing Considerations
+- Make each option clearly distinct
+- Ensure mobile usability
+- Add simple click tracking
+- Consider creating 2-3 layout variations for A/B testing
+- Keep loading time under 2 seconds
+
+## Implementation Notes
+- Use semantic HTML for accessibility
+- Implement basic responsive breakpoints
+- Add simple fade-in animations
+- Include meta tags for social sharing
+- Ensure GitHub Pages compatibility
+
+Build this as a clean, professional landing page that prioritizes user experience testing over complex functionality. Focus on making each pathway feel equally valid and appealing.
+Additional Code Snipp<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Project Builder - Choose Your Path</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Build AI Projects Your Way</h1>
+        <p>Choose the path that works best for you</p>
+    </header>
+    
+    <main class="options-grid">
+        <div class="option-card" data-option="scratch">
+            <div class="icon">➕</div>
+            <h3>Start From Scratch</h3>
+            <p>Use MyAI Builder to create your project from the ground up</p>
+            <button>Build Now</button>
+        </div>
+        <!-- Repeat for other 4 options -->
+    </main>
+</body>
+</html>
+
+
+CSS for different layouts: 
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.option-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.option-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* A/B Test Alternative: List Layout */
+.options-list .option-card {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+analytics tracking: 
+
+document.querySelectorAll('.option-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+        const option = e.currentTarget.dataset.option;
+        // Simple tracking - you can replace with your preferred analytics
+        console.log(`User clicked: ${option}`);
+        // gtag('event', 'click', { option_selected: option });
+    });
+});
+
