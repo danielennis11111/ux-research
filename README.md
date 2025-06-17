@@ -1,37 +1,46 @@
 # AI Project Builder - Landing Page User Testing
 
-A clean, responsive landing page designed for user testing different AI project entry points. Built with vanilla HTML, CSS, and JavaScript for fast loading and easy deployment to GitHub Pages.
+A clean, responsive landing page designed for user testing different AI project entry points. Built with vanilla HTML, CSS, and JavaScript for fast loading and deployed to GitHub Pages.
+
+🌐 **Live Site**: [https://danielennis11111.github.io/ux-research/](https://danielennis11111.github.io/ux-research/)
 
 ## 🎯 Purpose
 
-This landing page helps understand user preferences for different AI project entry points by testing 5 distinct pathways:
+This landing page helps understand user preferences for different AI project entry points by testing 5 distinct pathways with real working links:
 
-1. **Start From Scratch** - Use MyAI Builder to create projects from the ground up
-2. **Learn First** - Follow articles and documentation to understand basics
-3. **Watch & Learn** - Watch video tutorials for step-by-step project building
-4. **Use a Template** - Start with prebuilt templates and customize them
-5. **Chat to Build** - Chat with AI to guide project building
+1. **Start From Scratch** - [ASU AI Platform](https://platform-beta.aiml.asu.edu/) for creating projects from the ground up
+2. **Learn First** - [ASU AI Documentation](https://ai.asu.edu/technical-foundation/articles-and-documentation) with articles and guides
+3. **Watch & Learn** - [Video tutorials](https://drive.google.com/file/d/1PjQ7xnUmFoj2BoOK9X9969LemSSVQorA/view?usp=sharing) for step-by-step learning
+4. **Use a Template** - [GPT Marketplace](https://danielennis11111.github.io/gpt-marketplace/#/marketplace) with prebuilt templates
+5. **Chat to Build** - [ASU AI Builder](https://app-beta.aiml.asu.edu/d127e308d80943adb9493ce1e3dac300) for AI-guided project creation
 
 ## 🚀 Features
 
+- **Live & Functional** - Real working links to ASU AI platforms
 - **Pure Frontend** - No frameworks, just HTML/CSS/JavaScript
 - **Mobile Responsive** - Works seamlessly on all device sizes
 - **A/B Testing Ready** - Support for multiple layout variations
 - **Analytics Tracking** - Built-in user interaction tracking
 - **Fast Loading** - Optimized for quick page loads (<2 seconds)
 - **Accessibility** - Keyboard navigation and screen reader support
-- **GitHub Pages Ready** - Deploy instantly to GitHub Pages
+- **Deployed to GitHub Pages** - Live and ready for user testing
 
 ## 📁 File Structure
 
 ```
-acquisition-prototype/
-├── index.html          # Main landing page
+ux-research/
+├── index.html          # Main landing page with working links
 ├── styles.css          # Responsive styling with A/B test layouts
-├── script.js           # User tracking and interactions
+├── script.js           # User tracking and real navigation
 ├── README.md           # This documentation
 └── instructions.txt    # Original project requirements
 ```
+
+## 🌐 Live Deployment
+
+**Primary URL**: [https://danielennis11111.github.io/ux-research/](https://danielennis11111.github.io/ux-research/)
+
+**Repository**: [https://github.com/danielennis11111/ux-research](https://github.com/danielennis11111/ux-research)
 
 ## 🎨 Layout Variations
 
@@ -105,32 +114,21 @@ console.log(abTestUtils.generateTestUrls());
 
 ### Testing URLs
 
-- **Grid Layout**: `index.html?layout=grid`
-- **List Layout**: `index.html?layout=list`
-- **Carousel Layout**: `index.html?layout=carousel`
+- **Grid Layout**: [https://danielennis11111.github.io/ux-research/?layout=grid](https://danielennis11111.github.io/ux-research/?layout=grid)
+- **List Layout**: [https://danielennis11111.github.io/ux-research/?layout=list](https://danielennis11111.github.io/ux-research/?layout=list)
+- **Carousel Layout**: [https://danielennis11111.github.io/ux-research/?layout=carousel](https://danielennis11111.github.io/ux-research/?layout=carousel)
 
-## 🚀 Deployment
+## 🚀 Deployment Status
 
-### GitHub Pages
+✅ **Successfully Deployed to GitHub Pages**
 
-1. **Push to repository**
-   ```bash
-   git add .
-   git commit -m "Add landing page files"
-   git push origin main
-   ```
+The site is live and fully functional at [https://danielennis11111.github.io/ux-research/](https://danielennis11111.github.io/ux-research/)
 
-2. **Enable GitHub Pages**
-   - Go to repository Settings
-   - Navigate to Pages section
-   - Select "Deploy from a branch"
-   - Choose `main` branch and `/ (root)` folder
-   - Save settings
-
-3. **Access your site**
-   ```
-   https://[username].github.io/[repository-name]/
-   ```
+### Deployment Details
+- **Repository**: [danielennis11111/ux-research](https://github.com/danielennis11111/ux-research)
+- **Branch**: `main`
+- **Deploy Method**: GitHub Pages from root folder
+- **Status**: Live and ready for user testing
 
 ### Other Platforms
 
@@ -204,4 +202,16 @@ This project is created for user testing purposes. Modify and use as needed for 
 
 ---
 
-**Ready to test?** Open `index.html` in your browser and start collecting user interaction data! 
+## 🎯 Ready for User Testing!
+
+**Live Site**: [https://danielennis11111.github.io/ux-research/](https://danielennis11111.github.io/ux-research/)
+
+The landing page is fully deployed and ready to collect real user interaction data. Each click takes users to actual ASU AI platforms while tracking their preferences for UX research analysis.
+
+### Quick Start for Testing:
+1. Visit the live site
+2. Try different layouts using the URL parameters
+3. Check browser console for analytics data
+4. Share with test users to gather insights
+
+**Last Updated**: June 2025 
