@@ -127,7 +127,8 @@ The site is live and fully functional at [https://danielennis11111.github.io/ux-
 ### Deployment Details
 - **Repository**: [danielennis11111/ux-research](https://github.com/danielennis11111/ux-research)
 - **Branch**: `main`
-- **Deploy Method**: GitHub Pages from root folder
+- **Deploy Method**: Automated GitHub Actions → GitHub Pages
+- **Auto-Deploy**: ✅ Triggers on every push to main
 - **Status**: Live and ready for user testing
 
 ### Other Platforms
